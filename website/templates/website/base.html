@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'website\css\bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'website\css\website.css' %}">
+    <title>{% block page_title %}{% endblock page_title %}</title>
+</head>
+<body>
+<section>
+    {% block page_heading %}
+    
+    {% endblock page_heading %}
+</section>
+    <section class="page-content">
+        {% block page_content %}
+        
+        {% endblock page_content %}
+    </section>
+    
+</body>
+</html>
