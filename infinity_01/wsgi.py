@@ -8,6 +8,12 @@ https://docs.djangoproject.com/en/4.1/howto/deployment/wsgi/
 """
 
 import os
+import sys
+
+#adding pythonanywhere project directory
+project_home = '/home/vishavant/infinity_01'
+if project_home not in sys.path:
+    sys.path.insert(0, project_home)
 
 from django.core.wsgi import get_wsgi_application
 
