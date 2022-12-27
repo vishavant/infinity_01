@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'website\css\bootstrap.min.css' %}">
+    {% comment %} <link rel="stylesheet" href="{% static 'website\css\bootstrap.min.css' %}"> {% endcomment %}
+    {% comment %} <script src="{% static 'website/js/bootstrap.bundle.min.js' %}"></script> {% endcomment %}
     <link rel="stylesheet" href="{% static 'website\css\website.css' %}">
+    {% block custom_css %}{% endblock custom_css %}
     <title>{% block page_title %}{% endblock page_title %}</title>
 </head>
 <body>
@@ -20,6 +22,11 @@
         
         {% endblock page_content %}
     </section>
-    
+
+
+    {% block custom_js %}{% endblock custom_js %}
+    <script src="{% static 'website/js/website.js' %}"></script>
+    {% comment %} <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'website/js/popper.js' %}"></script> {% endcomment %}
 </body>
 </html>
