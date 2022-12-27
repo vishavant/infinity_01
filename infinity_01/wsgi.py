@@ -11,7 +11,7 @@ import os
 import sys
 
 #adding pythonanywhere project directory
-project_home = '/home/vishavant/infinity_01'
+project_home = '/home/vishavant/vishal'
 if project_home not in sys.path:
     sys.path.insert(0, project_home)
 
