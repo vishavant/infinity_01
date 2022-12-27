@@ -9,7 +9,7 @@ def index(request):
 
 
 def assignment1(request):
-    return render(request, "website/assignment1.html")
+    return render(request, "website/testimonial_card_frontend.html")
 
 
 def homepage(request):
